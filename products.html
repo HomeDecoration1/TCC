@@ -1392,7 +1392,7 @@
     async function loadProducts() {
       try {
         const res = await fetch('products.json', { cache: 'no-store' });
-      PRODUCTS = await res.json();
+     PRODUCTS = (await res.json()).products || [];
       } catch (e) {
         PRODUCTS = [];
       }
