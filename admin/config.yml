@@ -37,28 +37,38 @@ collections:
           - label: "Products"
             name: "products"
             widget: "list"
-
             allow_add: true
-          summary: "{{fields.name}} — ৳{{fields.price}}"
+            allow_remove: true
+            allow_reorder: true
+            collapsed: true
+            summary: "{{fields.name}} — ৳{{fields.price}}"
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Category", name: "category", widget: "select", options: [{label: "Gypsum (জিপসাম)", value: "gypsum"}, {label: "Resin (রেজিন)", value: "resin"}, {label: "Candle (ক্যান্ডেল)", value: "candle"}], default: "gypsum" }
               - { label: "Subcategory (optional)", name: "subcategory", widget: "string", required: false }
-              - { label: "Date Added (used for Newest/Oldest sorting)", name: "dateAdded", widget: "datetime", required: false, date_format: "YYYY-MM-DD", time_format: false }
-              - { label: "Tags (comma-separated, helps search)", name: "tags", widget: "string", required: false, hint: "e.g. gift, wedding, decor" }
+              - { label: "Date Added", name: "dateAdded", widget: "datetime", required: false, date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "Tags", name: "tags", widget: "string", required: false }
               - { label: "SKU", name: "sku", widget: "string", required: false }
-              - { label: "Short Description (Bengali) — shown on product cards", name: "description", widget: "text", required: false }
-              - { label: "Full Description — shown on product page", name: "fullDescription", widget: "text", required: false }
+              - { label: "Short Description (Bengali)", name: "description", widget: "text", required: false }
+              - { label: "Full Description", name: "fullDescription", widget: "text", required: false }
               - { label: "Price (৳)", name: "price", widget: "number", value_type: "float" }
-              - { label: "Original Price (optional — shown crossed out, leave blank for no discount badge)", name: "originalPrice", widget: "number", value_type: "float", required: false }
+              - { label: "Original Price (optional)", name: "originalPrice", widget: "number", value_type: "float", required: false }
               - { label: "Main Photo", name: "image", widget: "image" }
-              - { label: "Additional Gallery Photos (optional)", name: "gallery", widget: "list", allow_add: true, field: { label: "Photo", name: "src", widget: "image" }, required: false }
+              - label: "Additional Gallery Photos"
+                name: "gallery"
+                widget: "list"
+                allow_add: true
+                required: false
+                field:
+                  label: "Photo"
+                  name: "src"
+                  widget: "image"
               - { label: "In Stock", name: "inStock", widget: "boolean", default: true }
               - { label: "Stock Quantity (optional)", name: "stockQuantity", widget: "number", value_type: "int", required: false }
               - { label: "Materials (optional)", name: "materials", widget: "string", required: false }
               - { label: "Dimensions (optional)", name: "dimensions", widget: "string", required: false }
               - { label: "Weight (optional)", name: "weight", widget: "string", required: false }
-              - { label: "Show in Trending (homepage)", name: "trending", widget: "boolean", default: false, required: false }
+              - { label: "Show in Trending", name: "trending", widget: "boolean", default: false, required: false }
               - { label: "Mark as Best Seller", name: "bestSeller", widget: "boolean", default: false, required: false }
               - { label: "Mark as New Arrival", name: "newArrival", widget: "boolean", default: false, required: false }
               - { label: "Mark as Featured", name: "featured", widget: "boolean", default: false, required: false }
