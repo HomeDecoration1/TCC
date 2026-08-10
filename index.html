@@ -687,7 +687,7 @@
       let products = [];
       try {
         const res = await fetch('products.json', { cache: 'no-store' });
-        products = await res.json();
+       products = (await res.json()).products || [];
       } catch (e) {
         products = [];
       }
@@ -825,7 +825,7 @@
     async function loadAllProductsForSearch() {
       try {
         const res = await fetch('products.json', { cache: 'no-store' });
-        ALL_PRODUCTS_FOR_SEARCH = await res.json();
+       ALL_PRODUCTS_FOR_SEARCH = (await res.json()).products || [];
       } catch (e) {
         ALL_PRODUCTS_FOR_SEARCH = [];
       }
