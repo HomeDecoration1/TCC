@@ -186,15 +186,24 @@
     }
 
     .sidebar-overlay.active { display: block; }
-
+ .search-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0 20px 10px;
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    top: 0;
+    z-index: 99;
+}
+@media (min-width: 768px) {
     .search-row {
-      padding: 10px 20px 14px;
-      background: var(--bg-color);
-      border-bottom: 1px solid var(--border-color);
-      position: relative;
-      top: 97px;
-      z-index: 99;
+        flex-direction: row;
+        justify-content: space-between;
     }
+}
     .search-bar-box { max-width: 1000px; margin: 0 auto; position: relative; }
     .search-input-wrap {
       display: flex; align-items: center; gap: 10px;
