@@ -1391,7 +1391,7 @@
     async function loadProducts() {
       try {
         const res = await fetch('products.json', { cache: 'no-store' });
-        PRODUCTS = await res.json();
+      PRODUCTS = await res.json();
       } catch (e) {
         PRODUCTS = [];
       }
@@ -1634,7 +1634,7 @@
       if (currentCategory === 'all') { wrap.innerHTML = ''; return; }
 
       const subcats = [...new Set(
-        PRODUCTS.filter(p => p.category === currentCategory && p.subcategory).map(p => p.subcategory)
+       (Array.isArray(PRODUCTS) ? PRODUCTS : Object.values(PRODUCTS || {})).filter(p => p.category === currentCategory && p.subcategory).map(p => p.subcategory)
       )];
 
       if (!subcats.length) { wrap.innerHTML = ''; return; }
