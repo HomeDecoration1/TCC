@@ -38,6 +38,7 @@ collections:
             name: "products"
             widget: "list"
             root: true
+            allow_add: true
             summary: "{{name}} — ৳{{price}}"
             fields:
               - { label: "Name", name: "name", widget: "string" }
@@ -51,7 +52,7 @@ collections:
               - { label: "Price (৳)", name: "price", widget: "number", value_type: "float" }
               - { label: "Original Price (optional — shown crossed out, leave blank for no discount badge)", name: "originalPrice", widget: "number", value_type: "float", required: false }
               - { label: "Main Photo", name: "image", widget: "image" }
-              - { label: "Additional Gallery Photos (optional)", name: "gallery", widget: "list", field: { label: "Photo", name: "src", widget: "image" }, required: false }
+              - { label: "Additional Gallery Photos (optional)", name: "gallery", widget: "list", allow_add: true, field: { label: "Photo", name: "src", widget: "image" }, required: false }
               - { label: "In Stock", name: "inStock", widget: "boolean", default: true }
               - { label: "Stock Quantity (optional)", name: "stockQuantity", widget: "number", value_type: "int", required: false }
               - { label: "Materials (optional)", name: "materials", widget: "string", required: false }
