@@ -1,17 +1,72 @@
 {
   "products": [
     {
-      "bestSeller": false,
+      "bestSeller": true,
       "trending": true,
       "price": 90,
       "name": "Minimalist Oval Gypsum Tray",
-      "featured": false,
+      "featured": true,
       "inStock": true,
       "originalPrice": 118,
       "newArrival": true,
       "limited": false,
       "image": "https://i.supaimg.com/90fa2840-ff7d-4425-a3a9-702953a58f4b/b8355dd8-cc5e-4c20-a8b7-bacb256ef8d3.jpg",
       "description": "জুয়েলারি ট্রে, ক্যান্ডেল বেস বা ডেকোর পিস হিসেবে ব্যবহারের জন্য হ্যান্ডমেড জিপসাম ট্রে।",
+      "category": "gypsum"
+    },
+    {
+      "bestSeller": false,
+      "trending": true,
+      "price": 119,
+      "name": "The Ribbed Vanity Keepsake Box",
+      "featured": true,
+      "inStock": true,
+      "originalPrice": 139,
+      "newArrival": true,
+      "limited": false,
+      "image": "https://i.supaimg.com/90fa2840-ff7d-4425-a3a9-702953a58f4b/05720e62-2b43-4905-8564-89a385dd5a33.png",
+      "description": "ঘড়ি, আংটি বা অর্নামেন্টস নিরাপদে ও নান্দনিকভাবে সাজিয়ে রাখার চমৎকার জিপসাম জুয়েলারি বক্স।",
+      "category": "gypsum"
+    },
+    {
+      "bestSeller": false,
+      "trending": false,
+      "price": 140,
+      "name": "The Carousel Gypsum Jar",
+      "featured": true,
+      "inStock": true,
+      "originalPrice": "",
+      "newArrival": true,
+      "limited": false,
+      "image": "https://i.supaimg.com/90fa2840-ff7d-4425-a3a9-702953a58f4b/ab01dda5-7089-4008-b91f-d65f9876cfb5.jpg",
+      "description": "খোদাই করা ঘোড়ার ডিজাইন ও ঢাকনাসহ একটি নান্দনিক জিপসাম জার, যা আপনার গয়না রাখবে নিরাপদ ও ধুলোবালি মুক্ত।",
+      "category": "gypsum"
+    },
+    {
+      "bestSeller": false,
+      "trending": true,
+      "price": 170,
+      "name": "The Gypsum Donut Vase",
+      "featured": false,
+      "inStock": true,
+      "originalPrice": 197,
+      "newArrival": true,
+      "limited": false,
+      "image": "https://i.supaimg.com/90fa2840-ff7d-4425-a3a9-702953a58f4b/554f34b0-8de7-4e24-bb17-91f44542e1f1.png",
+      "description": "একটি আধুনিক ম্যাট-হোয়াইট ডোনাট শেপড ফুলদানি, যার ইউনিক রিং ডিজাইন অন্দরে নিয়ে আসবে একটি মিনিমাল ও শৈল্পিক ছোঁয়া।",
+      "category": "gypsum"
+    },
+    {
+      "bestSeller": false,
+      "trending": true,
+      "price": 150,
+      "name": "Ribbed Gypsum Vase",
+      "featured": false,
+      "inStock": true,
+      "newArrival": false,
+      "limited": false,
+      "image": "https://i.supaimg.com/90fa2840-ff7d-4425-a3a9-702953a58f4b/35275356-bc02-47e0-ac59-3d90294c3dd0.jpg",
+      "description": "সিঙ্গেল ফ্লাওয়ার ভাস কিংবা ড্রেসিং টেবিল ও স্টাডি টেবিলের নান্দনিক অনুষঙ্গ হিসেবে ব্যবহারের জন্য আদর্শ।",
       "category": "gypsum"
     }
   ]
