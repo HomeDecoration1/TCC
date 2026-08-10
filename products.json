@@ -2,10 +2,10 @@
   "products": [
     {
       "bestSeller": false,
-      "trending": false,
+      "trending": true,
       "price": 90,
       "name": "Minimalist Oval Gypsum Tray",
-      "featured": false,
+      "featured": true,
       "inStock": true,
       "originalPrice": 120,
       "newArrival": true,
