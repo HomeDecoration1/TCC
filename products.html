@@ -260,7 +260,7 @@
 
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 25px;
     }
 
@@ -980,6 +980,7 @@
       .filter-drawer { width: 85vw; right: -85vw; }
       .filter-sort-bar { gap: 8px; }
       .sort-select { flex: 1; }
+      .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
     }
   </style>
 </head>
