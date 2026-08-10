@@ -37,9 +37,9 @@ collections:
           - label: "Products"
             name: "products"
             widget: "list"
-            root: true
+
             allow_add: true
-            summary: "{{name}} — ৳{{price}}"
+          summary: "{{fields.name}} — ৳{{fields.price}}"
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Category", name: "category", widget: "select", options: [{label: "Gypsum (জিপসাম)", value: "gypsum"}, {label: "Resin (রেজিন)", value: "resin"}, {label: "Candle (ক্যান্ডেল)", value: "candle"}], default: "gypsum" }
